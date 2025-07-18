@@ -1,0 +1,21 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual env
+venv/
+
+# SQLite DB
+operations.db
+
+# Env file
+.env
+
+# Docker
+*.log
+
+# Editor/temp
+.vscode/
+
+.pytest_cache/
+
