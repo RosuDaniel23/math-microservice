@@ -1,5 +1,6 @@
 import os
 import logging
+
 from flask import Flask
 from dotenv import load_dotenv
 from app.views import math_bp
@@ -15,6 +16,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
 def create_app():
     app = Flask(__name__)
     app.config["ENV"] = os.getenv("FLASK_ENV", "production")
@@ -25,6 +27,7 @@ def create_app():
 
     logger.info("Application started in %s mode", app.config["ENV"])
     return app
+
 
 if __name__ == "__main__":
     app = create_app()
